@@ -38,21 +38,21 @@
     },
     {
       "id": "plugin-hub",
-      "version": "1.5.0",
+      "version": "1.6.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "1d616b11e2d1722a9a4915dd26dccc19cc4bc07f16e1724601e4f67be5e3cc98",
+      "sha256": "0e09c41a3470806a26097e44ef3cc45f238c2a96040fd05646cc2d7817e29025",
       "name": {
         "zh": "插件中心",
         "en": "Plugin Hub"
       },
       "description": {
-        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容，已安装插件两列平铺。",
-        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs, with installed plugins laid out in two columns."
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容，已安装插件两列平铺，「可更新」页签内也可手动点击检查更新。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs, with installed plugins laid out in two columns and a manual check-for-updates button inside the Updates tab."
       },
       "change_log": [
-        "「已安装插件」页签改为两列平铺，插件卡片不再逐条竖向堆叠。",
-        "窄屏（≤640px）自动回落单列，空态提示横跨整行。",
-        "卡片标题允许换行，较长的插件名与 ID 不会挤出卡片。"
+        "「可更新」页签新增「检查更新」按钮，可不依赖顶部横幅手动触发检查。",
+        "检查期间按钮显示「检查中…」并置灰，与顶部横幅的「重新检查」状态联动。",
+        "检查完成后按钮自动恢复，可重复点击触发。"
       ]
     }
   ]
