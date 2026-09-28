@@ -35,6 +35,23 @@
         "首个公开发布版本。",
         "更新源托管在 Gitee，可在插件中心内直接安装与升级。"
       ]
+    },
+    {
+      "id": "plugin-hub",
+      "version": "1.1.1",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
+      "sha256": "72ca77a4eb9dd21568337adb8d80716a335e7cdcb8c7132286ebdd28461f3c2d",
+      "name": {
+        "zh": "插件中心",
+        "en": "Plugin Hub"
+      },
+      "description": {
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page."
+      },
+      "change_log": [
+        "插件中心 1.1.1 发布，支持多库汇总与库内自我更新。"
+      ]
     }
   ]
 }
