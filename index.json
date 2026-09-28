@@ -38,21 +38,21 @@
     },
     {
       "id": "plugin-hub",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "46730ec4e869b88f26a6bb84cc409e31629dd4c751013797a4ddf2c87c2fb2b4",
+      "sha256": "1d616b11e2d1722a9a4915dd26dccc19cc4bc07f16e1724601e4f67be5e3cc98",
       "name": {
         "zh": "插件中心",
         "en": "Plugin Hub"
       },
       "description": {
-        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容。",
-        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs."
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容，已安装插件两列平铺。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs, with installed plugins laid out in two columns."
       },
       "change_log": [
-        "页面改为页签切换：可更新、已安装插件、可安装、插件库、信息同排一行页签，点击切换二级内容，不再展开折叠。",
-        "保留原分区顺序与数据，默认停在「已安装插件」；顶部更新提示的「查看」直接切到「可更新」页签。",
-        "库数量与上次检查时间合并显示在「信息」页签首行。"
+        "「已安装插件」页签改为两列平铺，插件卡片不再逐条竖向堆叠。",
+        "窄屏（≤640px）自动回落单列，空态提示横跨整行。",
+        "卡片标题允许换行，较长的插件名与 ID 不会挤出卡片。"
       ]
     }
   ]
