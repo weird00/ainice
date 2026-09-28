@@ -1,0 +1,40 @@
+{
+  "plugins": [
+    {
+      "id": "ha-webhook",
+      "version": "1.0.0",
+      "package_url": "https://gitee.com/hg-jason/ha-webhook/raw/main/ha-webhook.plugin",
+      "sha256": "2866561147e87daa613081b4e5db7a94905b00280343305050de8f4b0964dcd0",
+      "name": {
+        "zh": "Home Assistant 触发",
+        "en": "Home Assistant Trigger"
+      },
+      "description": {
+        "zh": "把关注的有人、无人状态变化通过 HTTP POST 投递到 Home Assistant 的 Webhook 触发器。",
+        "en": "Deliver presence changes to a Home Assistant webhook trigger over HTTP POST."
+      },
+      "change_log": [
+        "首个公开发布版本。",
+        "更新源托管在 Gitee，可在插件中心内直接安装与升级。"
+      ]
+    },
+    {
+      "id": "presence-notify",
+      "version": "1.0.0",
+      "package_url": "https://gitee.com/hg-jason/ha-webhook/raw/main/presence-notify.plugin",
+      "sha256": "63282d88e3e7d6b1bc321d7081c66ea2a5ce0bb150e284c2e9d0a2430ecccc71",
+      "name": {
+        "zh": "区域有人无人通知",
+        "en": "Presence Notifier"
+      },
+      "description": {
+        "zh": "监测六个关注区的有人、无人状态变化，通过邮件和 PushPlus 推送通知。",
+        "en": "Watch six focus zones and push presence changes via email and PushPlus."
+      },
+      "change_log": [
+        "首个公开发布版本。",
+        "更新源托管在 Gitee，可在插件中心内直接安装与升级。"
+      ]
+    }
+  ]
+}
