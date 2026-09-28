@@ -54,6 +54,25 @@
         "检查期间按钮显示「检查中…」并置灰，与顶部横幅的「重新检查」状态联动。",
         "检查完成后按钮自动恢复，可重复点击触发。"
       ]
+    },
+    {
+      "id": "mhgeek",
+      "version": "1.0.0",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/mhgeek.plugin",
+      "sha256": "eea4aa70939961e5ecb379b2ea7e0c006e6384d7fa6ee5817687a11119fddf8f",
+      "name": {
+        "zh": "米家极客版",
+        "en": "Mi Geek Edition"
+      },
+      "description": {
+        "zh": "米家极客版自动化接入插件：短信授权连接主中枢，把全局及 A～H 区状态同步到米家极客版。",
+        "en": "Non-official bridge that authorizes over SMS, connects to the main hub, and syncs global and zone A–H states into Mi Home Geek Edition."
+      },
+      "change_log": [
+        "收录上游 david-miller-code/mhgeek 的官方发布包 v1.0.0。",
+        "通过手机号短信授权连接主中枢，将全局及 A～H 区状态同步到米家极客版。",
+        "上游为 GPL-3.0-only，发布包内已随附源码与 LICENSE。"
+      ]
     }
   ]
 }
