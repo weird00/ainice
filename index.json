@@ -163,24 +163,6 @@
         "收录 0.5.13 版本。",
         "两路画面合成一路接入视觉检测，支持米家账号或 RTSP 接入。"
       ]
-    },
-    {
-      "id": "plate-probe",
-      "version": "0.3.8",
-      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plate-probe.plugin",
-      "sha256": "f3379b61e74fbc1b6b301527921b1cd4bae346dae6ce9d48c3147ebcbd5c2d06",
-      "name": {
-        "zh": "车牌管理",
-        "en": "Plate Management"
-      },
-      "description": {
-        "zh": "测试版：独立 RTSP 车牌辨识、插件区域框选、台湾与大陆各 200 笔名单与 MQTT HA 事件。需实机验证。",
-        "en": "Test build: standalone RTSP, plugin ROI, allowlist and MQTT HA events. Device validation required."
-      },
-      "change_log": [
-        "收录 0.3.8 测试版。",
-        "独立 RTSP 车牌辨识、插件区域框选与 MQTT HA 事件，需实机验证。"
-      ]
     }
   ]
 }
