@@ -38,20 +38,21 @@
     },
     {
       "id": "plugin-hub",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "c4be76ad9a385ed0841ac3481457a793282ef30022a11a7d478cd2d11fecbf4f",
+      "sha256": "fd7e1d908118fa77ee3a6f56de16e845b1e611a90fe4c3544e46fe1f1ddf7d18",
       "name": {
         "zh": "插件中心",
         "en": "Plugin Hub"
       },
       "description": {
-        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，发现新版本时在页面顶部提示。",
-        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background and announced at the top of the page."
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面按「可更新 / 已安装 / 可安装 / 信息」分区呈现，插件库与信息可折叠。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page is split into Updates / Installed / Installable / Info sections, with libraries and info collapsible."
       },
       "change_log": [
-        "新增自动检查更新：插件启动后在后台定时比对已装插件与插件库版本。",
-        "发现可升级插件时，在页面最上方显示「有插件更新」提示，可直接跳转升级。"
+        "页面重新分区：可更新、已安装插件、可安装各自独立成块，操作路径更清楚。",
+        "插件库与最下方信息区改为可折叠，标题右侧显示库数量与上次检查时间。",
+        "可更新区块汇总后台自动检查与手动检查的结果，可直接在区块内升级。"
       ]
     }
   ]
