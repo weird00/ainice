@@ -73,6 +73,114 @@
         "通过手机号短信授权连接主中枢，将全局及 A～H 区状态同步到米家极客版。",
         "上游为 GPL-3.0-only，发布包内已随附源码与 LICENSE。"
       ]
+    },
+    {
+      "id": "ainice-matter-presence",
+      "version": "0.0.3",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/ainice-matter-presence.plugin",
+      "sha256": "8989cd7608ed63d984c778867d627047d21bd3e8e92cad98c403814df9be8398",
+      "name": {
+        "zh": "Matter 九区域人体感测",
+        "en": "Matter Nine-Zone Presence"
+      },
+      "description": {
+        "zh": "将全局与八个框选区域作为九个 Matter 占用感测器。开发测试包。",
+        "en": "Exposes global presence and eight selected zones as nine Matter occupancy sensors. Development preview."
+      },
+      "change_log": [
+        "收录 0.0.3 开发测试版。",
+        "将全局与八个框选区域暴露为九个 Matter 占用感测器。"
+      ]
+    },
+    {
+      "id": "human-presence-homekit",
+      "version": "0.4.1",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/human-presence-homekit.plugin",
+      "sha256": "b05be3e1e130652ddec0748ff4a93de86a87fde3249d0cb14b8192afb8928631",
+      "name": {
+        "zh": "HomeKit 人体感测器",
+        "en": "HomeKit Presence Sensor"
+      },
+      "description": {
+        "zh": "单一 HomeKit 网关：扫一次二维码配对，再于页面开关全局与区域 A~H，启用的感测器自动接入 Apple 家庭，停用则自动移除。",
+        "en": "A single HomeKit bridge: pair once by QR, then toggle the global and A-H zone sensors; enabled sensors are bridged into Apple Home and disabled ones are removed automatically."
+      },
+      "change_log": [
+        "收录 0.4.1 版本。",
+        "单网关一次扫码配对，可在页面开关全局与 A~H 区域感测器。"
+      ]
+    },
+    {
+      "id": "meter-ocr",
+      "version": "0.1.21",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/meter-ocr.plugin",
+      "sha256": "44bde5fecf795c5c7cc64fdb4f8c06e4049ce559143c42c2af86d5de9cd2464a",
+      "name": {
+        "zh": "数字OCR识别",
+        "en": "Digit OCR Recognition"
+      },
+      "description": {
+        "zh": "水电燃气表数字识别：双影像来源（系统预览流／独立 RTSP 摄像头）、手动框选 ROI、CRNN AI 识别 0-9 数字、可配置小数点位数、多时间段调度、MQTT Home Assistant 输出。系统预览流为只读、不影响原厂人体识别。",
+        "en": "Utility meter digit OCR: dual video source (system preview stream / standalone RTSP camera), manual ROI, CRNN AI digit recognition (0-9), configurable decimal places, scheduled recognition, MQTT Home Assistant output. The system preview stream is read-only and does not affect built-in human detection."
+      },
+      "change_log": [
+        "收录 0.1.21 版本。",
+        "支持系统预览流与独立 RTSP 双影像源、手动框选 ROI 与 CRNN 数字识别。"
+      ]
+    },
+    {
+      "id": "mhcamera",
+      "version": "1.0.8",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/mhcamera.plugin",
+      "sha256": "1123a9259cbc597de87d67fed7dec837f68c1530d057f20706adf52eff82e6e7",
+      "name": {
+        "zh": "米家摄像头",
+        "en": "Mi Camera"
+      },
+      "description": {
+        "zh": "基于 go2rtc 的米家摄像头接入插件",
+        "en": "Mi camera integration plugin based on go2rtc"
+      },
+      "change_log": [
+        "收录 1.0.8 版本。",
+        "基于 go2rtc 接入米家摄像头。"
+      ]
+    },
+    {
+      "id": "multicam",
+      "version": "0.5.13",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/multicam.plugin",
+      "sha256": "99e4750e6609241a795c88d0d62572f5696202ef078d1fbef16d1ab03ddefc7f",
+      "name": {
+        "zh": "米家双路摄像头",
+        "en": "Mi Home Dual Camera"
+      },
+      "description": {
+        "zh": "将两路摄像头画面合成一路接入视觉检测，支持米家账号或 RTSP 自行接入，提供实时预览与取景调整。",
+        "en": "Combine two cameras (Mi Home or RTSP) into one canvas for vision detection, with live preview and easy framing."
+      },
+      "change_log": [
+        "收录 0.5.13 版本。",
+        "两路画面合成一路接入视觉检测，支持米家账号或 RTSP 接入。"
+      ]
+    },
+    {
+      "id": "plate-probe",
+      "version": "0.3.8",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plate-probe.plugin",
+      "sha256": "f3379b61e74fbc1b6b301527921b1cd4bae346dae6ce9d48c3147ebcbd5c2d06",
+      "name": {
+        "zh": "车牌管理",
+        "en": "Plate Management"
+      },
+      "description": {
+        "zh": "测试版：独立 RTSP 车牌辨识、插件区域框选、台湾与大陆各 200 笔名单与 MQTT HA 事件。需实机验证。",
+        "en": "Test build: standalone RTSP, plugin ROI, allowlist and MQTT HA events. Device validation required."
+      },
+      "change_log": [
+        "收录 0.3.8 测试版。",
+        "独立 RTSP 车牌辨识、插件区域框选与 MQTT HA 事件，需实机验证。"
+      ]
     }
   ]
 }
