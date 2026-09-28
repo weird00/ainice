@@ -129,21 +129,21 @@
     },
     {
       "id": "plugin-hub",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "0e09c41a3470806a26097e44ef3cc45f238c2a96040fd05646cc2d7817e29025",
+      "sha256": "6efc46b340db0058687fed6429a3a78a52119812037cb46fd39bb80ccd58d369",
       "name": {
         "zh": "插件中心",
         "en": "Plugin Hub"
       },
       "description": {
-        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容，已安装插件两列平铺，「可更新」页签内也可手动点击检查更新。",
-        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs, with installed plugins laid out in two columns and a manual check-for-updates button inside the Updates tab."
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；大包分片传输，不受 512 KiB 限制；启动后在后台自动检查更新，发现新版本时在页面顶部提示。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Large packages are transferred in chunks, so the 512 KiB limit no longer applies. Updates are checked in the background and announced at the top of the page."
       },
       "change_log": [
-        "「可更新」页签新增「检查更新」按钮，可不依赖顶部横幅手动触发检查。",
-        "检查期间按钮显示「检查中…」并置灰，与顶部横幅的「重新检查」状态联动。",
-        "检查完成后按钮自动恢复，可重复点击触发。"
+        "安装包改为分片传输：超过 512 KiB 的大包由后端开分片会话逐片取回，安装不再受单次响应上限限制。",
+        "安装包上限由 512 KiB 提升到 32 MiB。",
+        "分片会话带 300 秒超时与数量上限，页面取完或失败即释放，避免占用内存。"
       ]
     },
     {
