@@ -1,8 +1,8 @@
 {
   "id": "ha-webhook",
   "version": "1.0.0",
-  "package_url": "https://gitee.com/hg-jason/ha-webhook/raw/main/ha-webhook.plugin",
-  "sha256": "2866561147e87daa613081b4e5db7a94905b00280343305050de8f4b0964dcd0",
+  "package_url": "https://gitee.com/hg-jason/ainice/raw/main/ha-webhook.plugin",
+  "sha256": "742707f527c0f4554713e61a1d96ef8582cf477189ebab3bef4dba06d3352dcb",
   "change_log": [
     "首个公开发布版本。",
     "更新源托管在 Gitee，可在插件中心内直接安装与升级。"

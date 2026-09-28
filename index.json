@@ -3,8 +3,8 @@
     {
       "id": "ha-webhook",
       "version": "1.0.0",
-      "package_url": "https://gitee.com/hg-jason/ha-webhook/raw/main/ha-webhook.plugin",
-      "sha256": "2866561147e87daa613081b4e5db7a94905b00280343305050de8f4b0964dcd0",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/ha-webhook.plugin",
+      "sha256": "742707f527c0f4554713e61a1d96ef8582cf477189ebab3bef4dba06d3352dcb",
       "name": {
         "zh": "Home Assistant 触发",
         "en": "Home Assistant Trigger"
@@ -21,7 +21,7 @@
     {
       "id": "presence-notify",
       "version": "1.0.0",
-      "package_url": "https://gitee.com/hg-jason/ha-webhook/raw/main/presence-notify.plugin",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/presence-notify.plugin",
       "sha256": "63282d88e3e7d6b1bc321d7081c66ea2a5ce0bb150e284c2e9d0a2430ecccc71",
       "name": {
         "zh": "区域有人无人通知",
