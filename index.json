@@ -38,19 +38,20 @@
     },
     {
       "id": "plugin-hub",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "72ca77a4eb9dd21568337adb8d80716a335e7cdcb8c7132286ebdd28461f3c2d",
+      "sha256": "c4be76ad9a385ed0841ac3481457a793282ef30022a11a7d478cd2d11fecbf4f",
       "name": {
         "zh": "插件中心",
         "en": "Plugin Hub"
       },
       "description": {
-        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级。",
-        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page."
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，发现新版本时在页面顶部提示。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background and announced at the top of the page."
       },
       "change_log": [
-        "插件中心 1.1.1 发布，支持多库汇总与库内自我更新。"
+        "新增自动检查更新：插件启动后在后台定时比对已装插件与插件库版本。",
+        "发现可升级插件时，在页面最上方显示「有插件更新」提示，可直接跳转升级。"
       ]
     }
   ]
