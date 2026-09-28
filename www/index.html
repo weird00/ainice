@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Assistant 触发</title>
+  <script src="/platform/sdk/ui-bootstrap.js"></script>
+  <link rel="stylesheet" href="/platform/css/theme.css">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="page">
+    <header class="page-head">
+      <div>
+        <h1 data-i18n="title">Home Assistant 触发</h1>
+        <p class="hint" data-i18n="subtitle">有人无人状态变化或手动触发时，向 Home Assistant 的 Webhook 发送一条命令。</p>
+      </div>
+      <button id="lang-toggle" class="ghost" type="button">EN</button>
+    </header>
+
+    <section class="surface">
+      <h2 data-i18n="connSection">连接配置</h2>
+      <p class="hint" data-i18n="connHint">Home Assistant 地址与共享密钥只需配置一次，下面的触发器共用这一份设置。</p>
+      <div class="section" id="config-fields"></div>
+    </section>
+
+    <section class="surface">
+      <h2 data-i18n="triggerSection">触发器</h2>
+      <p class="hint" data-i18n="triggerHint">每条触发器各自带一个 Webhook ID，并各自指定监听哪个区域、在有人还是无人时投递；需要一个就增加一条。</p>
+      <div class="section" id="trigger-list"></div>
+      <button id="add-trigger" class="secondary" type="button" data-i18n="addTrigger">新增触发器</button>
+    </section>
+
+    <div class="actions">
+      <button id="save" class="primary" type="button" data-i18n="save">保存配置</button>
+      <button id="trigger" class="secondary" type="button" data-i18n="trigger">立即触发一次</button>
+      <button id="test" class="secondary" type="button" data-i18n="test">发送测试命令</button>
+    </div>
+
+    <section class="surface">
+      <h2 data-i18n="statusSection">运行状态</h2>
+      <div class="section" id="live-status"></div>
+    </section>
+
+    <section class="surface">
+      <h2 data-i18n="logSection">最近记录</h2>
+      <div class="section" id="log"></div>
+    </section>
+  </div>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

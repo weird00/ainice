@@ -1,0 +1,13 @@
+{
+  "id": "ha-webhook",
+  "version": "1.0.0",
+  "upgrade_url": "https://gitee.com/hg-jason/ha-webhook/raw/main/upgrade.json",
+  "name": {
+    "zh": "Home Assistant 触发",
+    "en": "Home Assistant Trigger"
+  },
+  "description": {
+    "zh": "把关注的有人、无人状态变化通过 HTTP POST 投递到 Home Assistant 的 Webhook 触发器。",
+    "en": "Deliver presence changes to a Home Assistant webhook trigger over HTTP POST."
+  }
+}
