@@ -1,6 +1,24 @@
 {
   "plugins": [
     {
+      "id": "ainice-matter-presence",
+      "version": "0.0.3",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/ainice-matter-presence.plugin",
+      "sha256": "8989cd7608ed63d984c778867d627047d21bd3e8e92cad98c403814df9be8398",
+      "name": {
+        "zh": "Matter 九区域人体感测",
+        "en": "Matter Nine-Zone Presence"
+      },
+      "description": {
+        "zh": "将全局与八个框选区域作为九个 Matter 占用感测器。开发测试包。",
+        "en": "Exposes global presence and eight selected zones as nine Matter occupancy sensors. Development preview."
+      },
+      "change_log": [
+        "首个公开发布版本 0.0.3。",
+        "将全局与八个框选区域暴露为九个 Matter 占用感测器。"
+      ]
+    },
+    {
       "id": "ha-webhook",
       "version": "1.0.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/ha-webhook.plugin",
@@ -16,80 +34,6 @@
       "change_log": [
         "首个公开发布版本。",
         "更新源托管在 Gitee，可在插件中心内直接安装与升级。"
-      ]
-    },
-    {
-      "id": "presence-notify",
-      "version": "1.0.0",
-      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/presence-notify.plugin",
-      "sha256": "63282d88e3e7d6b1bc321d7081c66ea2a5ce0bb150e284c2e9d0a2430ecccc71",
-      "name": {
-        "zh": "区域有人无人通知",
-        "en": "Presence Notifier"
-      },
-      "description": {
-        "zh": "监测六个关注区的有人、无人状态变化，通过邮件和 PushPlus 推送通知。",
-        "en": "Watch six focus zones and push presence changes via email and PushPlus."
-      },
-      "change_log": [
-        "首个公开发布版本。",
-        "更新源托管在 Gitee，可在插件中心内直接安装与升级。"
-      ]
-    },
-    {
-      "id": "plugin-hub",
-      "version": "1.6.0",
-      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "0e09c41a3470806a26097e44ef3cc45f238c2a96040fd05646cc2d7817e29025",
-      "name": {
-        "zh": "插件中心",
-        "en": "Plugin Hub"
-      },
-      "description": {
-        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容，已安装插件两列平铺，「可更新」页签内也可手动点击检查更新。",
-        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs, with installed plugins laid out in two columns and a manual check-for-updates button inside the Updates tab."
-      },
-      "change_log": [
-        "「可更新」页签新增「检查更新」按钮，可不依赖顶部横幅手动触发检查。",
-        "检查期间按钮显示「检查中…」并置灰，与顶部横幅的「重新检查」状态联动。",
-        "检查完成后按钮自动恢复，可重复点击触发。"
-      ]
-    },
-    {
-      "id": "mhgeek",
-      "version": "1.0.0",
-      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/mhgeek.plugin",
-      "sha256": "eea4aa70939961e5ecb379b2ea7e0c006e6384d7fa6ee5817687a11119fddf8f",
-      "name": {
-        "zh": "米家极客版",
-        "en": "Mi Geek Edition"
-      },
-      "description": {
-        "zh": "米家极客版自动化接入插件：短信授权连接主中枢，把全局及 A～H 区状态同步到米家极客版。",
-        "en": "Non-official bridge that authorizes over SMS, connects to the main hub, and syncs global and zone A–H states into Mi Home Geek Edition."
-      },
-      "change_log": [
-        "收录上游 david-miller-code/mhgeek 的官方发布包 v1.0.0。",
-        "通过手机号短信授权连接主中枢，将全局及 A～H 区状态同步到米家极客版。",
-        "上游为 GPL-3.0-only，发布包内已随附源码与 LICENSE。"
-      ]
-    },
-    {
-      "id": "ainice-matter-presence",
-      "version": "0.0.3",
-      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/ainice-matter-presence.plugin",
-      "sha256": "8989cd7608ed63d984c778867d627047d21bd3e8e92cad98c403814df9be8398",
-      "name": {
-        "zh": "Matter 九区域人体感测",
-        "en": "Matter Nine-Zone Presence"
-      },
-      "description": {
-        "zh": "将全局与八个框选区域作为九个 Matter 占用感测器。开发测试包。",
-        "en": "Exposes global presence and eight selected zones as nine Matter occupancy sensors. Development preview."
-      },
-      "change_log": [
-        "收录 0.0.3 开发测试版。",
-        "将全局与八个框选区域暴露为九个 Matter 占用感测器。"
       ]
     },
     {
@@ -138,12 +82,31 @@
         "en": "Mi Camera"
       },
       "description": {
-        "zh": "基于 go2rtc 的米家摄像头接入插件",
-        "en": "Mi camera integration plugin based on go2rtc"
+        "zh": "基于 go2rtc 的米家摄像头接入插件。",
+        "en": "Mi camera integration plugin based on go2rtc."
       },
       "change_log": [
         "收录 1.0.8 版本。",
         "基于 go2rtc 接入米家摄像头。"
+      ]
+    },
+    {
+      "id": "mhgeek",
+      "version": "1.0.0",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/mhgeek.plugin",
+      "sha256": "eea4aa70939961e5ecb379b2ea7e0c006e6384d7fa6ee5817687a11119fddf8f",
+      "name": {
+        "zh": "米家极客版",
+        "en": "Mi Geek Edition"
+      },
+      "description": {
+        "zh": "米家极客版自动化接入插件：短信授权连接主中枢，把全局及 A～H 区状态同步到米家极客版。",
+        "en": "Non-official bridge that authorizes over SMS, connects to the main hub, and syncs global and zone A-H states into Mi Home Geek Edition."
+      },
+      "change_log": [
+        "收录上游 david-miller-code/mhgeek 的官方发布包 v1.0.0。",
+        "通过手机号短信授权连接主中枢，将全局及 A～H 区状态同步到米家极客版。",
+        "上游为 GPL-3.0-only，发布包内已随附源码与 LICENSE。"
       ]
     },
     {
@@ -162,6 +125,43 @@
       "change_log": [
         "收录 0.5.13 版本。",
         "两路画面合成一路接入视觉检测，支持米家账号或 RTSP 接入。"
+      ]
+    },
+    {
+      "id": "plugin-hub",
+      "version": "1.6.0",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
+      "sha256": "0e09c41a3470806a26097e44ef3cc45f238c2a96040fd05646cc2d7817e29025",
+      "name": {
+        "zh": "插件中心",
+        "en": "Plugin Hub"
+      },
+      "description": {
+        "zh": "支持配置多个插件库，读取各库 index.json 汇总可安装插件，并在页面里直接完成安装与升级；启动后在后台自动检查更新，页面用「可更新 / 已安装 / 可安装 / 插件库 / 信息」五个页签切换二级内容，已安装插件两列平铺，「可更新」页签内也可手动点击检查更新。",
+        "en": "Configure several plugin libraries, read each index.json to list installable plugins, and install or upgrade right from the page. Updates are checked in the background; the page switches between Updates / Installed / Installable / Libraries / Info via tabs, with installed plugins laid out in two columns and a manual check-for-updates button inside the Updates tab."
+      },
+      "change_log": [
+        "「可更新」页签新增「检查更新」按钮，可不依赖顶部横幅手动触发检查。",
+        "检查期间按钮显示「检查中…」并置灰，与顶部横幅的「重新检查」状态联动。",
+        "检查完成后按钮自动恢复，可重复点击触发。"
+      ]
+    },
+    {
+      "id": "presence-notify",
+      "version": "1.0.0",
+      "package_url": "https://gitee.com/hg-jason/ainice/raw/main/presence-notify.plugin",
+      "sha256": "63282d88e3e7d6b1bc321d7081c66ea2a5ce0bb150e284c2e9d0a2430ecccc71",
+      "name": {
+        "zh": "区域有人无人通知",
+        "en": "Presence Notifier"
+      },
+      "description": {
+        "zh": "监测六个关注区的有人、无人状态变化，通过邮件和 PushPlus 推送通知。",
+        "en": "Watch six focus zones and push presence changes via email and PushPlus."
+      },
+      "change_log": [
+        "首个公开发布版本。",
+        "更新源托管在 Gitee，可在插件中心内直接安装与升级。"
       ]
     }
   ]
