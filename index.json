@@ -40,7 +40,7 @@
       "id": "plugin-hub",
       "version": "1.3.0",
       "package_url": "https://gitee.com/hg-jason/ainice/raw/main/plugin-hub.plugin",
-      "sha256": "fd7e1d908118fa77ee3a6f56de16e845b1e611a90fe4c3544e46fe1f1ddf7d18",
+      "sha256": "b458454650bf75207a188f0ce4e045b1e6ad7062292a3ef3b39836d6e604abb1",
       "name": {
         "zh": "插件中心",
         "en": "Plugin Hub"
